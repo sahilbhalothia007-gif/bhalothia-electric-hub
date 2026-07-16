@@ -33,7 +33,13 @@ const features = [
   },
 ];
 
-export default function ProductFeatures() {
+type Props = {
+  product: {
+    name: string;
+  };
+};
+
+export default function ProductFeatures({ product }: Props) {
   return (
     <section className="bg-slate-950 py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

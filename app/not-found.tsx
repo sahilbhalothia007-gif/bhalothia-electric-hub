@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Home, Bike, ArrowLeft } from "lucide-react";
 
@@ -40,13 +42,13 @@ export default function NotFound() {
           </Link>
         </div>
 
-        <button
-          onClick={() => window.history.back()}
-          className="mt-6 inline-flex items-center text-cyan-400 transition hover:text-cyan-300"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Go Back
-        </button>
+        <Link
+  href="/"
+  className="mt-6 inline-flex items-center text-cyan-400 transition hover:text-cyan-300"
+>
+  <ArrowLeft className="mr-2 h-4 w-4" />
+  Go Back
+</Link>
       </div>
     </main>
   );
